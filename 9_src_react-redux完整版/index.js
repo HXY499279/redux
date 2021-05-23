@@ -6,6 +6,7 @@ import App from './App';
 import store from './redux/store';
 
 ReactDOM.render(
+  //通过props的方式来传递store
   <Provider store={store} >
     <App />
   </Provider>

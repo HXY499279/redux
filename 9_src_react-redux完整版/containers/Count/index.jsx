@@ -1,4 +1,4 @@
-//引入action
+//引入actionCreator
 import { increment, decrement, incrementAsync } from "../../redux/actions/count"
 //引入connect用于连接UI组件与redux
 import { connect } from 'react-redux'
@@ -51,7 +51,6 @@ class Count extends Component {
         )
     }
 }
-
 // 使用connect()()创建并暴露一个Count的容器组件
 export default connect(
     state => ({ count: state.count, personCount:state.persons.length }),

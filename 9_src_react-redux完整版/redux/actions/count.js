@@ -1,4 +1,5 @@
 /*
+    创建Count组件的actionCreator
     该文件专门为Count组件生成action对象
 */
 import { INCREMENT, DECREMENT } from '../constant'

@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+//引入nanoid来创建随机id
 import { nanoid } from 'nanoid';
 //引入connect用于连接UI组件与redux
 import { connect } from 'react-redux'
+//引入actionCreator
 import { addPerson } from '../../redux/actions/person'
-
 
 class Person extends Component {
 
@@ -36,6 +37,7 @@ class Person extends Component {
 }
 
 export default connect(
+    //从store获取到数据state后,解析state中的数据来传递给UI组件
     state => ({
         persons: state.persons,
         count: state.count
